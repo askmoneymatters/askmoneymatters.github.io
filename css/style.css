@@ -103,6 +103,14 @@ body.dark-theme{
 
 
 
+:root {
+    --swiper-theme-color: var(--first-color);
+}
+span.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
+
+
 
 
 /* Base */
@@ -447,10 +455,18 @@ img{
 
 /* About */
 .about__img{
-    width: 200px;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+    transition: transform .5s; /* Animation */
+}
+.about__container img{
+    margin-top: 40px;
+    width: 280px;
+    box-shadow: 12px 12px 10px rgba(51, 48, 48, 0.479);
+}
+.about__img:hover{
+    transform: scale(1.04);
 }
 .about{
     padding-top: 70px;
@@ -554,64 +570,44 @@ img{
     background-color: var(--first-color);
 }
 
-.skills__html{
-    width: 75%;
+.skills__taxPlan{
+    width: 85%;
 }
 
-.skills__css{
+.skills__fillReturn{
     width: 60%;
 }
 
-.skills__javascript{
-    width: 50%;
+.skills__responseNotices{
+    width: 55%;
 }
 
-.skills__bootstrap{
+.skills__tds{
+    width: 80%;
+}
+
+.skills__gstRegistration{
+    width: 45%;
+}
+
+.skills__gstReturn{
+    width: 85%;
+}
+
+.skills__reconcile{
     width: 40%;
 }
 
-.skills__react{
-    width: 10%;
-}
-
-.skills__nodejs{
-    width: 30%;
-}
-
-.skills__git{
+.skills__bookeeping{
     width: 60%;
 }
 
-.skills__postman{
-    width: 10%;
+.skills__panApply{
+    width: 75%;
 }
 
-.skills__mysql{
-    width: 65%;
-}
-
-.skills__firebase{
-    width: 5%;
-}
-
-.skills__figma{
-    width: 5%;
-}
-
-.skills__sketch{
-    width: 3%;
-}
-
-.skills__photoshop{
-    width: 5%;
-}
-
-.skills__canva{
-    width: 60%;
-}
-
-.skills__filmora{
-    width: 50%;
+.skills__dsc{
+    width: 45%;
 }
 
         /* for opened/closed Skills Content */
@@ -823,10 +819,12 @@ img{
 /* Portfolio */
 .portfolio__container{
     overflow: initial;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
 }
 
 .portfolio__content{
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
 }
 
 .portfolio__img{
@@ -1140,6 +1138,13 @@ img{
     margin-top: var(--mb-3);
     color: rgb(226, 219, 219);
 }
+.footer__copy span{
+    color: white;
+    padding-bottom: 15px;
+}
+.footer__copy a{
+    color:white;
+}
 
 .footer__title, .footer__social{
     color: #fff;
@@ -1371,7 +1376,7 @@ img{
         flex-direction: row;
     }
     .nav__icon{
-        margin-right: 6px;
+        margin-right: 3px;
     }
     .nav__menu{
         margin-left: auto;
@@ -1447,6 +1452,7 @@ img{
 
     .footer__container{
         grid-template-columns: repeat(3, 1fr);
+        box-shadow: none;
     }
     .footer__bg{
         padding: 3rem 0 1.2rem;
@@ -1472,6 +1478,7 @@ img{
     .main,
     .footer__container{
         padding: 0;
+        box-shadow: none;
     }
 
     .home__blob{
