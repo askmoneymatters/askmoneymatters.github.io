@@ -68,6 +68,7 @@ skillsHeader.forEach((el) => {
 const tabs = document.querySelectorAll('[data-target]');
 const tabContents = document.querySelectorAll('[data-content]');
 
+
 tabs.forEach(tab => {
     tab.addEventListener("click", () => {
         const target = document.querySelector(tab.dataset.target);
