@@ -2,7 +2,7 @@
 ### Tax Consultant | Accountant
 High level experience in Taxation, Accounting & expertise in producing quality work.
 <hr>
-Made with HTML, CSS &amp; JS
+Contact me now to avail exciting discounts on your new Projects
 <br>
 <hr>
 Hosted on:
