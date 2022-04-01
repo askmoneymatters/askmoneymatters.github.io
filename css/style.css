@@ -323,16 +323,15 @@ img{
 }
 
 .greenText{
-    color: rgb(33, 199, 83);
-    /* text-shadow: 1px 1px 5px rgb(0, 0, 0); */
-    text-shadow: 1px 1px 1px rgb(26, 112, 9);
+    color: rgb(20, 154, 72);
+    text-shadow: 1px 1px 1px rgb(10, 59, 0);
     font-size: larger;
 }
 
 .blackText{
     font-size: larger;
-    color: black;
-    text-shadow: 1px 1px 3px rgba(56, 65, 65, 0.596);
+    color: var(--title-color);
+    text-shadow: 1px 1px 3px rgba(56, 65, 65, 0.751);
 }
 
 .texts{
@@ -1240,11 +1239,9 @@ img{
     color: rgb(226, 219, 219);
 }
 .footer__copy span{
+    display: inline-block;
     color: white;
-    margin-bottom: 15px;
-}
-.footer__copy br{
-    margin: 5px;
+    padding-bottom: 5px;
 }
 .footer__copy a{
     color:white;
