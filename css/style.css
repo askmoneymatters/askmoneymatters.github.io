@@ -312,6 +312,7 @@ img{
 
 /*:// Landing Page */
 .land__container{
+    height: 105vh;
     position:relative;
     background-position:center;
     background-size:cover;
