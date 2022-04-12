@@ -536,7 +536,7 @@ img{
     box-shadow: 12px 12px 20px rgba(51, 48, 48, 0.363);
 }
 .about__img:hover{
-    transition: all .3s ease-in-out;
+    transition: all .9s ease-in-out;
     transform: scale(1.04);
     box-shadow: 12px 12px 30px rgba(51, 48, 48, 0.363);
 }
