@@ -441,7 +441,19 @@ img{
 
 .home__scroll-button{
     color: var(--first-color);
-    transition: all .3s .06s ease-in-out;
+    /* transition: all .3s .06s ease-in-out; */
+    animation: moveDown 2.7s ease-in-out 0s infinite;
+}
+@keyframes moveDown {
+    0%{
+        transform: translateY(.0rem);
+    }
+    50%{
+        transform: translateY(.55rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
 }
 .home__description:hover .home__scroll-button{
     transform: translateY(.35rem);
@@ -459,7 +471,7 @@ img{
 }
 
 .home__scroll-arrow{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 
@@ -1348,6 +1360,10 @@ img{
 
 /* For small Devices */
 @media screen and (max-width: 568px){
+    .header{
+        /* backdrop-filter: blur(50px); */
+        /* background-color: var(--body-color-alt); */
+    }
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);

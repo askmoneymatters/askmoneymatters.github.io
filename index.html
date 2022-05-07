@@ -1,3 +1,6 @@
+<!--:! warning: DESIGNED & DEVELOPED BY "PRANJAL KUMAR", all design and style rights are reserved. -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,13 +11,15 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-DFLWFFDFLR');
     </script>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- animation div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -137,6 +142,7 @@
                 </h3>
             <p class="home__description">
                 We are providing quality, personalised financial guidance to both Individuals and Businesses. Our expertise ranges from Income Tax Returns, GST Compliances, Accounting Services, Expert Consultation.
+                <br>
                     <a href="#about" class="home__scroll home__scroll-button button button--flex">
                         <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
                         <span class="home__scroll-name bgScroll">Scroll down</span>
@@ -156,7 +162,7 @@
         <!--/ Home -->
         <section class="home section" id="home">
             <div class="home__container container grid">
-                <div class="home__content grid">
+                <div class="home__content grid" data-aos="fade-up" >
                     <div class="home__social">
                         <a href="https://www.linkedin.com/in/muskGaurav/" class="home__social-icon"
                             target="_blank">
@@ -173,7 +179,7 @@
                         </a>
                     </div>
 
-                    <div class="home__img">
+                    <div class="home__img" data-aos="fade-up" data-aos-duration="700">
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
@@ -198,7 +204,7 @@
                         <p class="home__description">
                             High level experience in Taxation, Accounting & expertise in producing quality work.
                         </p>
-                        <a href="#contact" class="button button--flex">
+                        <a href="#contact" class="button button--flex"  data-aos="fade-up" data-aos-duration="900">
                             Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
@@ -219,13 +225,13 @@
         <section class="about" id="about">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Introduction</span>
-            <div class="about__container container grid">
+            <div class="about__container container grid" data-aos="fade-up">
                 <img src="./res/about.jpg" alt="Gaurav Muskan, founder of Money Matters" class="about__img">
                 <div class="about__data">
                     <p class="about__description">
                         An aspiring CA Finalist with good analytical, team working and interpersonal skills. Have had exposure to Audits and Taxation as per my articleship. Have participated in various social, charitable and voluntary events.
                     </p>
-                    <div class="about__info">
+                    <div class="about__info" data-aos="fade-up" data-aos-duration="700">
                         <div>
                             <span class="about__info-title">03+</span>
                             <span class="about__info-name">Years <br> experience</span>
@@ -239,7 +245,7 @@
                             <span class="about__info-name">Happy <br> clients</span>
                         </div>
                     </div>
-                    <div class="about__buttons">
+                    <div class="about__buttons" data-aos="fade-up" data-aos-duration="700">
                         <a download="" href="./res/Gaurav_CV.pdf" class="button button--flex">
                             Download CV <i class="uil uil-download-alt button__icon"></i>
                         </a>
@@ -252,7 +258,7 @@
         <section class="skills section" id="skills">
             <h2 class="section__title">Overview</h2>
             <span class="section__subtitle">Range:</span>
-            <div class="skills__container container grid ">
+            <div class="skills__container container grid " data-aos="fade-up">
                 <div class="">
                     <!--:? Skills 1 -->
                     <div class="skills__content skills__open">
@@ -378,7 +384,7 @@
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
             <div class="qualification__container container">
-                <div class="qualification__tabs">
+                <div class="qualification__tabs" data-aos="fade-up">
                     <div class="qualification__button button--flex " data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Education
@@ -390,7 +396,7 @@
                 </div>
                 <div class="classification__sections">
                     <!--:/ Qualification Content: 1 -->
-                    <div class="qualification__content qualification__active" data-content id="education">
+                    <div class="qualification__content qualification__active" data-content id="education" data-aos="fade-up">
                         <!--:* Qualification 1 -->
                         <div class="qualification__data">
                             <div>
@@ -440,7 +446,7 @@
                     </div>
 
                     <!--:/ Qualification Content: 2 -->
-                    <div class="qualification__content" data-content id="work">
+                    <div class="qualification__content" data-content id="work" data-aos="fade-up">
 
                         <!--:* Qualification 1 -->
                         <div class="qualification__data">
@@ -485,9 +491,9 @@
         <section class="services section" id="services">
             <h2 class="section__title">Services</h2>
             <span class="section__subtitle">What I offer ?</span>
-            <div class="services__container container grid">
+            <div class="services__container container grid" data-aos="fade-up">
                 <!--:* Services 1 -->
-                <div class="services__content">
+                <div class="services__content" data-aos="fade-up">
                     <div>
                         <i class="uil uil-money-withdrawal services__icon"></i>
                         <h3 class="services__title">Income <br>Taxation</h3>
@@ -518,7 +524,7 @@
                 </div>
 
                 <!--:* Services 2 -->
-                <div class="services__content">
+                <div class="services__content" data-aos="fade-up">
                     <div>
                         <i class="uil uil-rupee-sign services__icon"></i>
                         <h3 class="services__title">GST <br> Services</h3>
@@ -546,7 +552,7 @@
                 </div>
 
                 <!--:* Services 3 -->
-                <div class="services__content">
+                <div class="services__content" data-aos="fade-up">
                     <div>
                         <i class="uil uil-suitcase services__icon"></i>
                         <h3 class="services__title">Other <br> Services</h3>
@@ -589,7 +595,7 @@
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent work</span>
-            <div class="portfolio__container container swiper mySwiper">
+            <div class="portfolio__container container swiper mySwiper" data-aos="fade-up">
                 <div class="swiper-wrapper">
                     <!--:* Portfolio 1 -->
                     <div class="portfolio__content grid swiper-slide">
@@ -657,7 +663,7 @@
         <section class="section whyus center">
             <div class="home__data">
                 <h1 class="home__title">Why us ?</h1>
-                <div class="whyusList">
+                <div class="whyusList" data-aos="fade-up">
                     <h3 class="home__subtitle">
                         <span><i class="uil uil-cube services__modal-icon"></i></span>
                         Top notch skill set
@@ -687,11 +693,11 @@
                         On Call Service
                     </h3>
                 </div>
-                <a href="#contact" class="button button--flex">
+                <a href="#contact" class="button button--flex" data-aos="fade-up">
                     Contact Us <i class="uil uil-message button__icon"></i>
                 </a>
             </div>
-            <div class="whyusImg">
+            <div class="whyusImg" data-aos="fade-up">
                 <img src="./res/whyus.png" alt="customer Service">
             </div>
         </section>
@@ -719,7 +725,7 @@
             <h2 class="section__title">Testimonial</h2>
             <span class="section__subtitle">My client saying</span>
 
-            <div class="testimonial__container container swiper mySwiper">
+            <div class="testimonial__container container swiper mySwiper" data-aos="fade-up">
                 <div class="swiper-wrapper testimonial-wrapper">
                     <!--/ Testimonial 1 -->
                     <div class="testimonial__content swiper-slide">
@@ -829,7 +835,7 @@
             <h2 class="section__title">Contact Me</h2>
             <span class="section__subtitle">Get in touch</span>
 
-            <div class="contact__container container grid">
+            <div class="contact__container container grid" data-aos="fade-up">
                 <div>
 
                     <div class="contact__information">
@@ -952,7 +958,7 @@
                     &COPY; Gaurav Muskan | All rights reserved
                 </span>
                 <br>
-<!--                 Made in association with <a href="https://linkedin.com/in/pranjal-kumar-ac/" target="_blank">Pranjal Kumar <i class="uil uil-external-link-alt"></i></a> -->
+                Made in association with <a href="https://linkedin.com/in/pranjal-kumar-ac/" target="_blank">Pranjal Kumar <i class="uil uil-external-link-alt"></i></a>
             </p>
         </div>
     </footer>
@@ -963,7 +969,15 @@
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
     
-
+    <!--:/  aos animation div  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
+    
 
     <!-- Swiper Js -->
     <script src="./js/swiper-bundle.min.js"></script>
