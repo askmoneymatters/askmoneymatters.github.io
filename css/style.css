@@ -544,7 +544,7 @@ img{
     transition: transform .5s; /* Animation */
 }
 .about__container img{
-    margin-top: 40px;
+    margin-top: -20px;
     width: 280px;
     box-shadow: 12px 12px 20px rgba(51, 48, 48, 0.363);
 }
@@ -584,6 +584,7 @@ img{
 .about__buttons{
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 
@@ -592,6 +593,7 @@ img{
 
 
 /* Skills */
+
 .skill__container{
     row-gap: 0;
 }
@@ -1350,7 +1352,7 @@ img{
 /*:?  MediaQueries  */
 @media screen and (min-width: 20px){
     .texts{
-        padding-top: 10vh;    
+        padding-top: 100px;    
     }
     .texts h1{
         text-shadow: 1px 1px 4px white;        
@@ -1381,7 +1383,7 @@ img{
         column-gap: 0;
     }
     .texts{
-        padding-top: 10vh;    
+        padding-top: 100px;    
     }
     .texts h1{
         font-size: 35px;
