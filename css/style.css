@@ -312,7 +312,6 @@ img{
 
 /*:// Landing Page */
 .land__container{
-    height: 110vh;
     position:relative;
     background-position:center;
     background-size:cover;
@@ -376,7 +375,9 @@ img{
     /* color: white; */
     background-color: rgb(233, 225, 225);
 }
-
+.space_provider{
+    padding-top: 100px;
+}
 
 
 
@@ -553,7 +554,7 @@ img{
     box-shadow: 12px 12px 30px rgba(51, 48, 48, 0.363);
 }
 .about{
-    padding-top: 70px;
+    padding-top: 110px;
 }
 .about__description{
     text-align: center;
@@ -1182,7 +1183,9 @@ img{
     outline: none;
     padding: .25rem .5rem .5rem 0;
 }
-
+.contact__container{
+    padding-bottom: 50px;
+}
 
 
 
@@ -1508,7 +1511,7 @@ img{
     }
 
     .section__title{
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
     .section__subtitle{
         margin-bottom: 2rem;
