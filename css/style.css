@@ -115,6 +115,16 @@ span.swiper-pagination-bullet-active {
 
 /* Base */
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: var(--first-color);
+}
+
+::selection {
+    color: white;
+    background: var(--first-color);
+  }
+
 * {
     margin: 0;
     padding: 0;
