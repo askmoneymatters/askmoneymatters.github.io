@@ -246,3 +246,26 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+// Counter Up
+const counterUp = window.counterUp.default
+
+const callback = entries => {
+	entries.forEach( entry => {
+		const el = entry.target
+		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
+			counterUp( el, {
+				duration: 2000,
+				delay: 16,
+			} )
+			el.classList.add( 'is-visible' )
+		}
+	} )
+}
+
+$('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});

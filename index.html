@@ -219,7 +219,7 @@
                         <span class="home__scroll-name">Scroll down</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
-                </div>
+                </div> 
  
             </div>
         </section>
@@ -236,11 +236,11 @@
                     </p>
                     <div class="about__info" data-aos="fade-up" data-aos-duration="700">
                         <div>
-                            <span class="about__info-title">03+</span>
+                            <span class="about__info-title counter">03+</span>
                             <span class="about__info-name">Years <br> experience</span>
                         </div>
                         <div>
-                            <span class="about__info-title">4.5+</span>
+                            <span class="about__info-title counter">4.5+</span>
                             <span class="about__info-name">Rating <br>overall</span>
                         </div>
                         <div>
@@ -527,7 +527,7 @@
                 </div>
 
                 <!--:* Services 2 -->
-                <div class="services__content" data-aos="fade-up">
+                <div class="services__content" data-aos="fade-up" data-aos-delay="300">
                     <div>
                         <i class="uil uil-rupee-sign services__icon"></i>
                         <h3 class="services__title">GST <br> Services</h3>
@@ -555,7 +555,7 @@
                 </div>
 
                 <!--:* Services 3 -->
-                <div class="services__content" data-aos="fade-up">
+                <div class="services__content" data-aos="fade-up" data-aos-delay="600">
                     <div>
                         <i class="uil uil-suitcase services__icon"></i>
                         <h3 class="services__title">Other <br> Services</h3>
@@ -608,7 +608,7 @@
                             <p class="portfolio__description">
                                 Income Tax from registration to planning of tax, adavace tax, filing of return till refund.
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://goo.gl/maps/5iXpdRiDgqzMdV3x7" target="_blank" class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-angle-right-b button__icon"></i>
                             </a>
@@ -617,13 +617,13 @@
 
                     <!--:* Portfolio 2 -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="res/portfolio2.jpg" alt="reference image of portfolio" class="portfolio__img">
+                        <img src="res/portfolio2.jpg" alt="reference image of portfolio" target="_blank" class="portfolio__img">
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">GST</h3>
                             <p class="portfolio__description">
                                 Registration to hassle free returns filing with periodic reconciliation.
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://goo.gl/maps/5iXpdRiDgqzMdV3x7" class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-angle-right-b button__icon"></i>
                             </a>
@@ -632,13 +632,13 @@
 
                     <!--:* Portfolio 3 -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="res/portfolio3.jpg" alt="reference image of portfolio" class="portfolio__img">
+                        <img src="res/portfolio3.jpg" target="_blank" alt="reference image of portfolio" class="portfolio__img">
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Accounting</h3>
                             <p class="portfolio__description">
                                 Management of the accounts with day to day transactions to reflect the true profits of the business.
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://goo.gl/maps/5iXpdRiDgqzMdV3x7" class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-angle-right-b button__icon"></i>
                             </a>
@@ -695,12 +695,12 @@
                         <span><i class="uil uil-cube services__modal-icon"></i></span>
                         On Call Service
                     </h3>
-                    <a href="#contact" class="button button--flex">
+                    <a href="#contact" class="button button--flex"  data-aos="zoom-in">
                         Contact Us <i class="uil uil-message button__icon"></i>
                     </a>
                 </div>
             </div>
-            <div class="whyusImg"  data-aos="zoom-in">
+            <div class="whyusImg"  data-aos="fade-up" >
                 <img src="./res/whyus.png" alt="customer Service">
             </div>
         </section>
@@ -708,7 +708,7 @@
 
         <!--/ Project in Mind -->
         <section class="project section">
-            <div class="project__bg" data-aos="fade">
+            <div class="project__bg" data-aos="fade-up">
                 <div class="project__container container grid">
                     <div class="project__data">
                         <h3 class="project__title">Have a new project ?</h3>
@@ -902,10 +902,10 @@
                         </div>
                         <div class="contact__content" data-aos="zoom-in">
                             <label for="message" class="contact__label">Message:</label>
-                            <textarea name="" id="message" class="contact__input" cols="30" rows="1.5"></textarea>
+                            <textarea name="" id="message" class="contact__input" style="resize: none;" cols="30" rows="1.5"></textarea>
                         </div>
                         <div>
-                            <a href="https://wa.me/917004360602?text=Hi%20Gaurav"  target="_blank" class="button button--flex">Send Message &nbsp;<i
+                            <a href="https://wa.me/917004360602?text=Hi%20Gaurav"  target="_blank" class="button button--flex" data-aos="zoom-in">Send Message &nbsp;<i
                                     class="uil uil-rocket button--flex"></i></a>
                         </div>
                     </div>
@@ -988,6 +988,13 @@
     <!-- Main Js -->
     <script src="./js/index.js"></script>
 
+    <!-- Counter-Up plugin -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    
+    <!-- JQuery plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 </body>
 
 </html>

@@ -358,8 +358,8 @@ img{
 .texts p{
     margin: 10%;
     background-color: rgba(20, 20, 20, 0.226);
-    backdrop-filter: blur(3px);   
-    text-shadow: 1px 1px darkslategray;
+    backdrop-filter: blur(5px);   
+    text-shadow: 2px 1px rgb(34, 55, 55);
     margin-top: 20px;
     border-radius: 8px;
     padding: 50px;
