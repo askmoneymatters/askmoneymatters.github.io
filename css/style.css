@@ -274,6 +274,7 @@ img{
     color: var(--title-color);
     font-weight: 600;
     transition: all 0.4s 0.02s ease-in-out;
+    /* text-shadow: 1px 1px rgb(105, 105, 105); */
 }
 .nav__link:hover{
     color: var(--first-color);
@@ -437,7 +438,7 @@ img{
 
 .home__subtitle{
     font-size: var(--h4-font-size);
-    color: var(--text-color);
+    color: var(--title-color);
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-75);
 }
@@ -755,7 +756,12 @@ img{
 .qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
+    color: var(--text-color);
     /* margin-bottom: var(--mb-0-25); */
+    transition: all 0.5s;
+}
+.qualification__subtitle:hover{
+    color: var(--title-color);
 }
 
 .qualification__calendar{
@@ -1534,7 +1540,7 @@ img{
         bottom: initial;
         border-radius: 0px;
         /* background-color: var(--body-color); */
-        background-color: rgba(133, 133, 133, 0.329);
+        background-color: rgba(120, 120, 120, 0.329);
         /* opacity: 0.9; */
         backdrop-filter: blur(50px);
     }
