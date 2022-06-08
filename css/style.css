@@ -213,7 +213,7 @@ img{
     z-index: var(--z-fixed);
     background-color: var(--body-color);
     border-radius: 1rem 1rem 0 0;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.644);
+    box-shadow: 0 0 25px 4px rgba(0, 0, 0, 0.644);
 }
 
 .swiper-pagination-bullet-active{
@@ -1343,11 +1343,11 @@ img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     background: rgba(144, 142, 142, 0.06);
-    box-shadow: 0 0 20px 0 rgba(127, 126, 126, 0.422);
+    box-shadow: 0 0 20px 0 rgb(224, 87, 87);
 }
 .request-loader span {
     position: relative;
@@ -1369,7 +1369,7 @@ img{
     content: '';
     height: 100%;
     width: 100%;
-    border: 8px solid rgba(132, 131, 131, 0.419);
+    border: 8px solid rgb(224, 87, 87);
     border-radius: 100%;
     animation-name: ripple;
     animation-duration: 3s;
@@ -1392,7 +1392,7 @@ img{
     content: '';
     height: 100%;
     width: 100%;
-    border: 8px solid rgba(139, 138, 138, 0.359);
+    border: 8px solid rgb(224, 87, 87);
     border-radius: 100%;
     animation-name: ripple;
     animation-duration: 3s;
@@ -1439,8 +1439,9 @@ img{
 /* Scroll Bar */
 ::-webkit-scrollbar{
     width: 0.60rem;
-    background-color: var(--scroll-bar-color);
-    border-radius: .5rem;
+    /* background-color: var(--scroll-bar-color); */
+    background-color: darkgray;
+    /* border-radius: .5rem; */
 }
 
 ::-webkit-scrollbar-thumb{
@@ -1468,6 +1469,9 @@ img{
 
 /*:?  MediaQueries  */
 @media screen and (min-width: 20px){
+    .header{
+        /* box-shadow: 10px 10px black; */
+    }
     .texts{
         padding-top: 100px;    
     }
