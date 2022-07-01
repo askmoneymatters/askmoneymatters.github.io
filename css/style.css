@@ -1087,7 +1087,7 @@ img{
 
 /* Testimonial */
 .testimonial{
-    background: url("../res/bgCat.png") no-repeat center;
+    background: url("../res/leavesBG.png") no-repeat center;
     background-size: cover;
 }
 
@@ -1125,11 +1125,13 @@ img{
 .testimonial__name{
     font-size: var(--h4-font-size);
     font-weight: var(--font-medium);
+    text-shadow: .3px .5px gray;
 }
 
 .testimonial__client{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
+    text-shadow: .3px .5px darkslategray;
 }
 
 .testimonial__description{
@@ -1583,9 +1585,6 @@ canvas {
     }
     .qualification__data{
         gap: .5rem;
-    }
-    .rightQualData{
-        padding-left: 15px;
     }
     .services__container{
         grid-template-columns: max-content;
