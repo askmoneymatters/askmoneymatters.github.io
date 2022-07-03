@@ -9,7 +9,7 @@ const navClose = document.getElementById("nav-close");
 
 // Menu Show
 // Validate if constant exists
-if(navToggle){
+if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');     //* classList helps in Dom Manipulation
         // navMenu.style.bottom = "0";
@@ -21,7 +21,7 @@ if(navToggle){
 
 // Menu Hidden
 // Validate if constant exists
-if(navClose){
+if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu');
         // navMenu.style.bottom = "-100%";
@@ -34,7 +34,7 @@ if(navClose){
 
 // Remove Menu Mobile
 const navLink = document.querySelectorAll('.nav__link');
-function linkAction(){
+function linkAction() {
     const navMenu = document.getElementById("nav-menu");
     // when we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu');
@@ -46,12 +46,12 @@ navLink.forEach((n) => n.addEventListener('click', linkAction));
 const skillsContent = document.getElementsByClassName("skills__content");
 const skillsHeader = document.querySelectorAll(".skills__header");
 
-function toggleSkills(){
+function toggleSkills() {
     let itemClass = this.parentNode.className;
-    for(let i = 0; i < skillsContent.length; i++){
+    for (let i = 0; i < skillsContent.length; i++) {
         skillsContent[i].className = "skills__content skills__close";
     }
-    if(itemClass === 'skills__content skills__close'){
+    if (itemClass === 'skills__content skills__close') {
         this.parentNode.className = "skills__content skills__open";
     }
 }
@@ -94,7 +94,7 @@ const modalViews = document.querySelectorAll('.services__modal');
 const modalBtns = document.querySelectorAll('.services__button');
 const modalCloses = document.querySelectorAll('.services__modal-close');
 
-let modal = function(modalClick){           // to add class of '.active-modal' to the clicked "View more" of service__modal
+let modal = function (modalClick) {           // to add class of '.active-modal' to the clicked "View more" of service__modal
     modalViews[modalClick].classList.add('active-modal');
 }
 
@@ -117,19 +117,19 @@ modalCloses.forEach((modalClose, i) => {
 
 
 
- 
+
 // Portfolio Swiper
 let swiperPortfolio = new Swiper(".portfolio__container", {
     cssMode: true,
     loop: true,
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     mousewheel: true,
     keyboard: true,
@@ -139,7 +139,7 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
 
 
 
- 
+
 // Testimonial
 let swiperTestimonial = new Swiper(".testimonial__container", {
     loop: true,
@@ -147,12 +147,12 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
     spaceBetween: 48,
 
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
     },
     breakpoints: {
-        568:{
+        568: {
             slidesPerView: 2,
         }
     }
@@ -165,21 +165,21 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 
 
 
- 
+
 // Scroll Sections Active Link
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
+        } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
@@ -190,25 +190,25 @@ window.addEventListener('scroll', scrollActive)
 
 
 
- 
+
 // Change Background Header
-function scrollHeader(){
+function scrollHeader() {
     const nav = document.getElementById('header')
     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+    if (this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
 
 
 
- 
+
 
 // show Scroll Up
-function scrollTop(){
+function scrollTop() {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 400 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 400) scrollUp.classList.add('show-scroll'); 
+    if (this.scrollY >= 400) scrollUp.classList.add('show-scroll');
     else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop);
@@ -232,9 +232,9 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-mo
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
@@ -253,22 +253,23 @@ themeButton.addEventListener('click', () => {
 const counterUp = window.counterUp.default
 
 const callback = entries => {
-	entries.forEach( entry => {
-		const el = entry.target
-		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
-			counterUp( el, {
-				duration: 2000,
-				delay: 16,
-			} )
-			el.classList.add( 'is-visible' )
-		}
-	} )
+    entries.forEach(entry => {
+        const el = entry.target
+        if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+            counterUp(el, {
+                duration: 2000,
+                delay: 16,
+            })
+            el.classList.add('is-visible')
+        }
+    })
 }
 
 $('.counter').counterUp({
     delay: 10,
     time: 1000
 });
+
 
 
 

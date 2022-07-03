@@ -746,6 +746,7 @@ img{
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
+    text-align: center;
 }
 
 .qualification__title{
@@ -759,6 +760,7 @@ img{
     color: var(--text-color);
     /* margin-bottom: var(--mb-0-25); */
     transition: all 0.5s;
+    max-width: 250px;
 }
 .qualification__subtitle:hover{
     color: var(--title-color);
@@ -820,7 +822,7 @@ img{
     transition: all .6s .5s ease-in-out;
 }
 .services__content:hover{
-    box-shadow: 0 9px 26px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 9px 26px #8b5d5d49;
 }
 
 .services__icon{
@@ -954,11 +956,17 @@ img{
 }
 
 .swiper-button-prev{
-    left: -.5rem;
+    left: -3rem;
 }
 
 .swiper-button-next{
-    right: -.5rem;
+    right: -3rem;
+}
+
+.swiper-pagination{
+    position: relative;
+    top: 50px;
+    color: var(--first-color);
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullet{
@@ -972,7 +980,6 @@ img{
 
 .swiper-pagination-bullet-active{
     background-color: var(--first-color);
-    display: none;
 }
 
 .swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet{
@@ -1222,7 +1229,9 @@ img{
     padding-bottom: 50px;
 }
 
-
+.form-button{
+    border: none;
+}
 
 
 
@@ -1347,6 +1356,11 @@ img{
     right: 1rem;
     width: 60px;
     border-radius: 50%;
+    transition: all .6s ease-in-out;
+}
+.chat-bot:hover{
+    box-shadow: 0 0 40px 0 rgb(224, 87, 87);
+    transform: scale(1.1);
 }
 .request-loader {
     display: flex;
@@ -1357,7 +1371,7 @@ img{
     width: 60px;
     border-radius: 100%;
     background: rgba(144, 142, 142, 0.06);
-    box-shadow: 0 0 20px 0 rgb(224, 87, 87);
+    box-shadow: 0 0 10px 0 rgba(224, 87, 87, 0.753);
 }
 .request-loader span {
     position: relative;
@@ -1583,6 +1597,12 @@ canvas {
     .skills__title{
         font-size: var(--normal-font-size);
     }
+    .swiper-button-prev{
+        left: -.5rem;
+    }
+    .swiper-button-next{
+        right: -.5rem;
+    }
     .qualification__data{
         gap: .5rem;
     }
@@ -1767,9 +1787,8 @@ canvas {
         width: 350px;
     }
     .about__description{
-        padding-top: 15px;
+        padding-top: 65px;
         text-align: center;
-        margin-top: 30px;
     }
     .about__info{
         justify-content: space-between;
