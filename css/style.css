@@ -1103,7 +1103,7 @@ img{
 
 /* Testimonial */
 .testimonial{
-    background: url("../res/bgCat.png") no-repeat;
+    background: url("../res/testimonial_bg.png") no-repeat;
     background-size: cover;
 }
 
