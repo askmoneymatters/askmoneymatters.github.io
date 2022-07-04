@@ -1,6 +1,6 @@
 /* Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Poppins:wght@400;500;600&display=swap');
 
 /* Variables CSS */
 
@@ -360,7 +360,7 @@ img{
     margin: 10%;
     background-color: rgba(20, 20, 20, 0.226);
     backdrop-filter: blur(5px);   
-    text-shadow: 2px 1px rgb(34, 55, 55);
+    text-shadow: .5px 1px rgb(34, 55, 55);
     margin-top: 20px;
     border-radius: 8px;
     padding: 50px;
@@ -438,13 +438,18 @@ img{
 
 .home__subtitle{
     font-size: var(--h4-font-size);
-    color: var(--title-color);
+    color: var(--body-font);
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-75);
+}
+.type{
+    color: var(--first-color);
+    /* color: var(--first-color-alt); */
 }
 
 .home__description{
     margin-bottom: var(--mb-2);
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .home__scroll{
@@ -548,6 +553,10 @@ img{
 
 
 /* About */
+.about{
+    /* background: url("../res/banner.png") no-repeat center; */
+}
+
 .about__img{
     border-radius: .5rem;
     justify-self: center;
@@ -819,10 +828,10 @@ img{
     padding: 3.5rem .5rem 1.25rem 1.5rem;
     border-radius: .35rem;
     box-shadow: 0 5px 9px rgba(0, 0, 0, .15);
-    transition: all .6s .5s ease-in-out;
+    transition: all .8s .5s ease-in-out;
 }
 .services__content:hover{
-    box-shadow: 0 9px 26px #8b5d5d49;
+    box-shadow: 0 9px 26px #69666671;
 }
 
 .services__icon{
@@ -916,7 +925,7 @@ img{
 /* Portfolio */
 .portfolio__container{
     overflow: initial;
-    margin: 100px var(--mb-1-5);
+    margin: 60px var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
 
@@ -1042,7 +1051,7 @@ img{
 }
 
 .project__bg{
-    background-image: url(../res/banner.png);
+    background: url(../res/banner.png) no-repeat center center;
     padding: 2rem 0;
     border-radius: 10px;
     margin: 6% 3%;
@@ -1094,7 +1103,7 @@ img{
 
 /* Testimonial */
 .testimonial{
-    background: url("../res/leavesBG.png") no-repeat center;
+    background: url("../res/bgCat.png") no-repeat;
     background-size: cover;
 }
 
@@ -1138,7 +1147,7 @@ img{
 .testimonial__client{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
-    text-shadow: .3px .5px darkslategray;
+    /* text-shadow: .3px .5px darkslategray; */
 }
 
 .testimonial__description{
@@ -1255,7 +1264,7 @@ img{
 
 .footer__bg{
     background-color: var(--first-color-second);
-    padding: 2rem 0 3rem;
+    padding: 2rem 0 0rem 0;
 }
 
 .footer__title{
@@ -1357,9 +1366,10 @@ img{
     width: 60px;
     border-radius: 50%;
     transition: all .6s ease-in-out;
+    z-index: 10;
 }
 .chat-bot:hover{
-    box-shadow: 0 0 40px 0 rgb(224, 87, 87);
+    box-shadow: 0 0 40px 0 rgb(231, 81, 81);
     transform: scale(1.1);
 }
 .request-loader {
@@ -1371,7 +1381,7 @@ img{
     width: 60px;
     border-radius: 100%;
     background: rgba(144, 142, 142, 0.06);
-    box-shadow: 0 0 10px 0 rgba(224, 87, 87, 0.753);
+    box-shadow: 0 0 10px 0 rgba(227, 72, 72, 0.753);
 }
 .request-loader span {
     position: relative;
@@ -1393,7 +1403,7 @@ img{
     content: '';
     height: 100%;
     width: 100%;
-    border: 8px solid rgb(224, 87, 87);
+    border: 8px solid rgb(227, 71, 71);
     border-radius: 100%;
     animation-name: ripple;
     animation-duration: 3s;
@@ -1416,7 +1426,7 @@ img{
     content: '';
     height: 100%;
     width: 100%;
-    border: 8px solid rgb(224, 87, 87);
+    border: 8px solid rgb(225, 69, 69);
     border-radius: 100%;
     animation-name: ripple;
     animation-duration: 3s;
