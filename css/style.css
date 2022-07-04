@@ -554,7 +554,8 @@ img{
 
 /* About */
 .about{
-    /* background: url("../res/banner.png") no-repeat center; */
+    background: url("../res/about_bg.png") no-repeat;
+    background-size: cover;
 }
 
 .about__img{
