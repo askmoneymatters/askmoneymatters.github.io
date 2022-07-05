@@ -1,5 +1,5 @@
 # Gaurav Muskan
-> ### Tax Consultant | Accountant
+> ### Tax Consultant | Accountant 
 <br>
 High level experience in Taxation, Accounting & expertise in producing quality work.
 <hr>
@@ -13,4 +13,4 @@ Hosted on:
 <img src="./res/seo.jpg">
 <hr>
 <br>
-Made in association with [PranjalKumar ⏩] (https://github.com/Pranjal-Barnwal/).
+Made in association with [PranjalKumar⏩] (https://github.com/Pranjal-Barnwal/)
