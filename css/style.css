@@ -319,10 +319,6 @@ img{
 }
 
 
-.gradient {
-    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-}
-
 
 
 /*:// Landing Page */
@@ -1715,6 +1711,19 @@ canvas {
     }
 }
 
+@media screen and (max-width: 668px){
+    .about{
+        background: url("../res/about_bg90.png") no-repeat;
+        background-size: cover;
+    }
+    .testimonial{
+        background: url("../res/about_bg90.png") no-repeat;
+        background-size: cover;
+    }
+}
+
+
+
 @media screen and (min-width: 768px) {
     .container{
         margin-left: auto;
@@ -1796,6 +1805,7 @@ canvas {
     .home__scroll-button{
         margin-left: 3rem;
     }
+    
     .about__container{
         column-gap: 5rem;
     }
