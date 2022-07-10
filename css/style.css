@@ -820,7 +820,6 @@ img{
 /* Services */
 .services__container{
     gap: 1.5rem;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .services__content{
@@ -828,12 +827,13 @@ img{
     background-color: var(--container-color);
     padding: 3.5rem .5rem 1.25rem 1.5rem;
     border-radius: .35rem;
-    box-shadow: 0 5px 9px rgba(0, 0, 0, .15);
+    box-shadow: 0 5px 9px rgba(54, 52, 52, 0.071);
     transition: all .8s .5s ease-in-out;
 }
 .services__content:hover{
-    box-shadow: 0 9px 26px #69666671;
+    box-shadow: 0 9px 26px #75717137;
 }
+
 
 .services__icon{
     display: block;
@@ -1829,8 +1829,10 @@ canvas {
         grid-template-columns: .5fr;
     }
     .services__container{
-        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+        grid-template-columns: repeat(4, 1fr);
         justify-content: center;
+        max-width: 900px;
     }
     .services__icon{
         font-size: 2rem;
