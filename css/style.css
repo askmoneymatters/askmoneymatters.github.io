@@ -555,7 +555,7 @@ img{
 /* About */
 .about{
     background: url("../res/about_bg.png") no-repeat;
-    background-size: cover;
+    background-size: 100vw;
 }
 
 .about__img{
@@ -1104,8 +1104,8 @@ img{
 
 /* Testimonial */
 .testimonial{
-    background: url("../res/testimonial_bg.png") no-repeat;
-    background-size: cover;
+    background: url("../res/about_bg.png") no-repeat;
+    background-size: 100vw;
 }
 
 .testimonial__container{
@@ -1713,8 +1713,10 @@ canvas {
 
 @media screen and (max-width: 668px){
     .about{
-        background: url("../res/about_bg90.png") no-repeat;
-        background-size: cover;
+        background: url("../res/about_bg.png") no-repeat;
+        /* background-size: 100vh; */
+        background-size: contain;
+        /* background-attachment: fixed; */
     }
     .testimonial{
         background: url("../res/about_bg90.png") no-repeat;
