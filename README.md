@@ -8,7 +8,7 @@ Contact me now to avail exciting discounts on your new Projects
 <hr>
 Hosted on:
 <br>
-▶️ https://muskgaurav.github.io/moneymatters/
+▶️ https://askmoneymatters.github.io/
 <hr>
 <img src="./res/seo.jpg">
 <hr>
