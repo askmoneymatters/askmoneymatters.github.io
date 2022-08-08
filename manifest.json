@@ -1,0 +1,52 @@
+{
+    "background_color": "#ffffff",
+    "description": "Money Matters - Consultancy Services\r\n    Money Matters brings expertise in Taxation | Financial Accounting & Planning | GST | Company Compliances.",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "Money Matters - Gaurav Muskan",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "askmoneymatters.github",
+    "start_url": "/",
+    "theme_color": "#e05757",
+    "categories": [],
+    "screenshots": [
+      {
+        "src": "/images/screenshot-1.png",
+        "sizes": "1280x800",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/screenshot-2.png",
+        "sizes": "750x1334",
+        "type": "image/png"
+      }
+    ],
+    "icons": [
+      {
+        "src": "./res/icons/favicon-32x32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      },
+      {
+        "src": "./res/icons/favicon-16x16.png",
+        "type": "image/png",
+        "sizes": "16x16"
+      },
+      {
+        "src": "./res/icons/favicon.ico",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "./res/icons/apple-touch-icon.png",
+        "type": "image/png",
+        "sizes": "180x180"
+      },
+      {
+        "src": "https://raw.githubusercontent.com/askmoneymatters/askmoneymatters.github.io/main/res/seo.jpg",
+        "type": "image/jpeg",
+        "sizes": "1897x972"
+      }
+    ],
+    "shortcuts": []
+  }
