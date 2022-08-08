@@ -8,9 +8,11 @@ Contact me now to avail exciting discounts on your new Projects
 <hr>
 Hosted on:
 <br>
-▶️ https://muskgaurav.github.io/moneymatters/
+▶️ https://askmoneymatters.github.io/
 <hr>
 <img src="./res/seo.jpg">
 <hr>
 <br>
-Made in association with [PranjalKumar⏩] (https://github.com/Pranjal-Barnwal/)
+Made in association with 
+
+[Pranjal Kumar⏩](https://github.com/Pranjal-Barnwal/)

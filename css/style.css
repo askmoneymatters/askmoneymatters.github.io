@@ -396,6 +396,7 @@ img{
 /* HOME */
 .home__container{
     gap: 1rem;
+    min-height: 90vh;
 }
 
 .home__content{
@@ -575,7 +576,8 @@ img{
     box-shadow: 12px 12px 30px rgba(51, 48, 48, 0.363);
 }
 .about{
-    padding-top: 110px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .about__description{
     text-align: center;
@@ -1105,7 +1107,7 @@ img{
 /* Testimonial */
 .testimonial{
     background: url("../res/about_bg.png") no-repeat;
-    background-size: 100vw;
+    background-size: cover;
 }
 
 .testimonial__container{
